@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Registration form</title>
+</head>
+<body>
+   <form >
+<fieldset>
+     <div class="FORMS">
+      <h1 ><br>COURSES REGISTERATION FORM<br></h1>
+      <p class="new"><b>Hey Newbie! Welcome to this page.Fill up The Form to Get Yourself Registered Here.</b></p>
+     <link rel="stylesheet" href="registrationform.css">
+<fieldset>
+<!--this is the first section of the form -->
+    <legend>Personal Information</legend> <br>
+        <!-- first name label -->
+              <label for="firstname"><b>First Name</b></label>
+              <input type="text" name="firstname" id="first_name" placeholder="Enter Your First Name" required>
+               <br><br> 
+        <!-- last name label -->
+              <label for="lastname"><b>Last Name</b></label>
+              <input type="text" name="lastname" id="last_name" placeholder="Enter Your Last Name"required>
+              <br><br>
+       <!-- insert profile picture -->
+             <label for="picture"><b>Upload your professional photo here:</b> <input id="picture" type="file" name="file" required/></label>
+             <br><br>
+       <!-- insert contact number -->
+             <label for="contactno"><b>Contact Number:</b></label>
+             <input type="number" name="contactno" id="contactno" placeholder="03*********" required>
+             <br><br>
+       <!-- inserting radio buttons for gender description -->
+             <b>What Is Your Gender?</b>
+             <input type="radio" name="gender" id="gender" value="Male">
+             <label for="gender">Male</label>
+             <input type="radio" name="gender" id="gender" value="female" checked>
+             <label for="gender">Fe-Male</label>
+             <br><br>
+        <!-- inserting special characters for email so type mentioned is email -->
+             <label for="email"><b>Enter your Email</b></label>
+             <input type="email" name="email" id="email" placeholder="Enter Your Email"required>
+             <br><br>
+        <!-- creating a password -->
+             <label for="new-password"><b>Create a new password</b></label>
+             <input type="password" name="new-password" id="new-password" type="password" pattern="[a-z0-5]{8,}" required maxlength="9" minlength="4" required placeholder="for37@5f">
+             <br><br>
+        <!-- inserting age in numbers here -->
+             <label for="age"><b>Input your age (in years):</b> </label>
+             <input id="age" type="number" name="age" min="13" max="100" placeholder="17"/>
+             <br><br>
+        <!-- inserting a drop down box for selection -->
+             <label for="City"><b>Where are you From?</b>
+             <select id="City" name="City" required>
+             <option value="Lahore" selected>Lahore</option>
+             <option value="Islamabad" selected>Islamabad</option>
+             <option value="Karachi">Karachi</option>
+             <option value="others">Others</option>
+             </select><br>
+        <!-- inserting a textbox -->
+             <p>(If you chose (others) in the above question, mention your city here)
+             <label for="City"><b>City Name:</b></label>
+             <input type="text" name="City" id="City" placeholder="Your City?" required></p>
+</fieldset><br><br> 
+<!-- first section ends here -->
+
+<fieldset>
+<!-- this is the second section(fieldset) of the form -->
+     <legend>Account Preferance</legend><br>
+              <b>Which Account Do you Prefer?</b>
+        <!-- inserting a radio button -->
+             <label for="student-account"><input id="student-account" type="radio" name="account-type" class="inline"  checked/> Student Account</label>
+             <label for="instructor-account"><input id="instructor-account" type="radio" name="account-type" class="inline" /> Instructor Account</label>
+</fieldset> <br><br>
+<!-- second section ends here -->
+     
+<fieldset>
+<!-- this is the third section(fieldset) of the form -->
+    <legend>Current Field And Interests</legend><br>
+        <!-- radio button for selecting one option only -->
+                 <label for="Studies"><b>Which Degree Are you currently pursuing?</b>
+                 <select id="Studies" name="Studies" required>
+                 <option value="CS" >Computer Science</option>
+                 <option value="SE" selected>Software Engineering</option>
+                 <option value="DS">Data Science</option>
+                 <option value="IT">Information Technology</option>
+                 <option value="EE">Electrical Engineering</option>
+                 <option value="others">Others</option>
+                 </select><br><br>
+        <!-- radio button for selecting one option only -->
+                 <label for="Interests"><b>What is your field of Interest?</b>
+                 <select id="Interests" name="Interests" required>
+                 <option value="web" selected>Web-Development</option>
+                 <option value="app" >Andriod Application Development</option>
+                 <option value="DS">Data Science</option>
+                 <option value="others">Others</option>
+                 </select>
+</fieldset><br><br>
+<!-- third section ends here -->
+
+
+<fieldset>
+<!-- ye 4th section hai form ka -->
+    <legend>Payment Verification</legend><br>
+            <p>You have to do a payment of 500/- for your successful registration on any one of the Account Mentioned Below:
+            <ul><li><b>Jazzcash:</b>***********
+            </li><li><b>EasyPesa:</b>***********</li></ul>
+             </p><br>
+        <!-- checkbox insert hua hai neechay -->
+             <label for="read" ></label>
+             <input type="checkbox" required>I have submitted the registration fee.
+             <br><br>
+        <!-- <user se picture insert krwanay k lye  -->
+             <label for="picture"><b>Upload proof of Payment/ Screenshot? </b><input id="picture" type="file" name="file" required/></label>
+</fieldset> <br><br>
+<!-- fourth section yhn khtm hogya -->
+       
+<fieldset>
+<!-- fifth section of the form -->
+    <legend>Other Details</legend><br>
+         <!-- textbox insert krnay k lye textarea ka tag -->
+             <label for="Information"><b>Anything else you want us to know:</b></label>
+             <textarea id="information" name="information" rows="3" cols="30" placeholder="I like coding on the beach.../ I am a graduate"></textarea>
+</fieldset><br><br>
+<!-- 5th section ends here -->
+
+<fieldset>
+<!-- this is the last section -->
+    <legend>Terms And Conditions</legend> <br>
+       
+           <p>Please read the following terms and conditions carefully before submitting your registration.</h6>
+           </p>
+           <h2>  **Terms and Conditions for Registration Form**</h2>
+           <p><ul>
+            <!-- creating an unordered list here -->
+              <li>**Legal Matter:**
+                <!-- ol stands for ordered list -->
+                  <ol><li>You may not use or try to use another person's account on the website without their specific permission.</li></ol></li>
+              <li>**Accuracy of Information:**
+                  <ol><Li>You are responsible for providing accurate and up-to-date information during the registration process.</Li>
+                      <li>Any misrepresentation or false information may lead to the rejection of your registration or termination from the program/course.</li></ol></li>
+              <li> **Registration Fee:**
+                  <ol><li>A non-refundable registration fee may be applicable, and payment must be made at the time of registration.</li>
+                      <li>The registration fee does not guarantee admission or enrollment into the program/course, which may be subject to further evaluation criteria.</li></ol></li>
+              <li>**Course/Program Confirmation:**
+                  <ol><li>The institution reserves the right to cancel or postpone a program/course if the minimum required number of participants is not met. </li></ol></li>
+              <li>**Attendance and Participation:**
+                <ol><li>Regular attendance and active participation in the program/course are expected.</li></ol></li>
+              <li>**Privacy and Data Usage:**
+                <ol><li>Personal data will be treated confidentially and will only be shared with relevant parties for program/course purposes.</li></ol></li>
+           </ul></p>
+           <br><br>
+       <p><b>TICK ALL THE CONDITIONS TO SUCCESSFULLY MOVE FORWARD WITH YOUR REGISTRATION</b></p><br>
+       <!-- inserting checkboxes to select all options -->
+              <label for="read"></label>
+              <input type="checkbox" required >**Legal Matter:**
+              <br><br>
+               <label for="read"></label>
+               <input type="checkbox" required >**Accuracy of Information:**
+               <br><br>
+               <label for="read"></label>
+                <input type="checkbox" required > **Registration Fee:**
+               <br><br>
+               <label for="read"></label>
+                <input type="checkbox" required>**Course/Program Confirmation:**
+               <br><br>
+                  <label for="read"></label>
+                <input type="checkbox" required>**Attendance and Participation:**
+               <br><br>
+                 <label for="read"></label>
+                <input type="checkbox" required>**Privacy and Data Usage:**
+                <br><br>
+                <label for="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> By submitting the student registration form,I confirm that I have red, understood, and agreed to these terms and conditions.
+                </label><br><br>
+            <!-- range insert -->
+               <label for="range"><b>On a Scale of 10, how much are you interested in giving time to this platform?</b></label>
+               <input type="range" name="range" id="range">
+        <br><br> 
+</fieldset>
+<!-- last section ends here -->
+        <br><br>
+        <!-- class is created to class it in css -->
+        <p class="end"><b>Click the submit button to successfully submit your registration</b></p>
+        <!-- inserting submit button -->
+           <button type="submit"><b>SUBMIT</b></button><br><br>
+</fieldset>
+</div>
+       </form>
+
+</body>
+</html>
