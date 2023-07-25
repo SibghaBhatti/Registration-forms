@@ -5,30 +5,48 @@
 /*calling tags without .*/
 h1
 {
+
 text-align-last: center ;
 background-color: rgb(216, 239, 11);
 color: rgb(101, 6, 66);
 }
 button{
-    background-color: rgb(6, 66, 11);
-    color: white;
+    background-color: rgb(30, 236, 47);
+    color: rgb(0, 0, 0);
     width: 200px;
     height: 50px;
     text-align-last: center ;
 }
+
 .end{
     background-color:rgb(231, 255, 18);
     color: black;
+  
+        border-style: dotted;
+    border-radius:5px;
+ 
 }
 .new{
     text-align-last: center ;
     background-color: rgb(66, 4, 66);
     color: white;
+    /*left border add jiski width 5 style solid color yellow hai */
+    border-left: 5px solid rgb(211, 244, 19);
 }
 body{
     font-size: large;
-    font-family:Verdana;
+    font-family:Verdana,  Tahoma, sans-serif;
+    /*sari sides ko alag alg b style kr sktay aur ek combine b like border-style:dashed; */
+  border-top-style:dashed;
+  border-bottom-style:dashed;
+  border-left-style:solid;
+  border-right-style:solid;
+  border-width: 2px;
+  border-color: orange red rgb(5, 69, 79) rgb(96, 117, 46);
+background-image: url("d.jpg");
+color:white;
 }
+
 
 
     
